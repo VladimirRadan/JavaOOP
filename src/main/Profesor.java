@@ -1,6 +1,7 @@
 package main;
 
-public class Profesor {
+public class Profesor extends Person{
+
 
 
 

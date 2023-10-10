@@ -1,6 +1,7 @@
 package main;
 
-import java.util.Scanner;
+import utils.Utils;
+
 
 public class Main {
 
@@ -8,19 +9,19 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Student student1 = new Student();//------>//@jfiewsf34
-        student1.ime = "Pera";
-        student1.prezime = "Peric";
-        student1.godine = 20;
+        Student student1 = new Student();
+        student1.setIme("Pera");
+        student1.setPrezime("Peric");
 
-        student1.godine = 21;
-
-        Student student2 = new Student("Marko", "Markovic", 21);
+        Student student2 = new Student("Marko", "Markovic", 30);
 
 
-        System.out.println(student1);
-        System.out.println(student2);
+        System.out.println(student1.getIme());
+        System.out.println(student2.getIme());
 
+        student1.setEmail(Utils.randomEmail());
+
+        Student.godine = 21;
 
 
     }
