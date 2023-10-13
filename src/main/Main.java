@@ -8,20 +8,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Adresa adresa = new Adresa("First", 100, "London");
 
-        Student student1 = new Student();
-        student1.setIme("Pera");
-        student1.setPrezime("Peric");
+        Student student = new Student("John", "Smith", Utils.randomEmail(), adresa, "34243/2023");
 
-        Student student2 = new Student("Marko", "Markovic", 30);
+        Profesor profesor = new Profesor("Pera", "Peric", Utils.randomEmail(), adresa, "Programiranje u Javi");
 
-
-        System.out.println(student1.getIme());
-        System.out.println(student2.getIme());
-
-        student1.setEmail(Utils.randomEmail());
-
-        Student.godine = 21;
+//        System.out.println(student);
+//        System.out.println(profesor);
 
 
     }

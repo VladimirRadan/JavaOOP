@@ -10,9 +10,4 @@ public class Utils {
         return System.currentTimeMillis() + "@email.com";
     }
 
-    public static Student student(){
-        return new Student();
-    }
-
-
 }
